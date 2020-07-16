@@ -18,4 +18,27 @@
 
 """
 
-ip = "192.168.3.1"
+ip = "192.168.1.1"
+list1 = ip.split('.')
+oct1_10 = int(list1[0])
+oct2_10 = int(list1[1])
+oct3_10 = int(list1[2])
+oct4_10 = int(list1[3])
+
+'''oct4_2 = bin(oct4_10)
+oct3_2 = bin(oct3_10)
+oct2_2 = bin(oct2_10)
+oct1_2 = bin(oct1_10)
+'''
+
+'''
+print("{:<10} {:<10} {:<10} {:<10}".format(oct1_10, oct2_10, oct3_10, oct4_10))
+print("{:<010b} {:<010b} {:<010b} {:<010b}".format(oct1_10, oct2_10, oct3_10, oct4_10))
+'''
+
+ip_template = '''
+{0:<10} {1:<10} {2:<10} {3:<10} 
+{0:<010b} {1:<010b} {2:<010b} {3:<010b} 
+''' 
+
+print(ip_template.format(oct1_10, oct2_10, oct3_10, oct4_10))

@@ -10,3 +10,7 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+n = int(mac.replace(':', ''), 16)
+#string1 = bin(n)
+#print(string1[2:])
+print("{:<b}".format(n))
